@@ -4,9 +4,11 @@ import axios from 'axios'
 const Doctors = () => {
     const [doctors , setDoctors] = useState([])
     useEffect(()=>{
-        axios.get('http://localhost:5000/doctors')
+        axios.get('https://morning-headland-85395.herokuapp.com/doctors')
         .then(data => setDoctors(data.data))
-        .catch(err => console.log(err))
+        .catch(err => {
+            
+        })
     },[])
     return (
         <section className="d-flex justify-content-center my-5">

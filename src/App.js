@@ -14,11 +14,12 @@ import AddDoctors from './Components/Dashboard/AddDoctors/AddDoctors';
 import Prescription from './Components/Dashboard/Prescription/Prescription';
 import Setting from './Components/Dashboard/Setting/Setting';
 import Appointments from './Components/Dashboard/Appointments/Appointments';
+import axios from "axios"
 
 export const userContext = createContext()
 const App = () => {
   const [userLoggedIn, setUserLoggedIn] = useState({})
-
+  const [isDoctor, setIsDoctor] = useState(false)
   useEffect(() => {
     const token = localStorage.getItem("token")
     if (token) {
@@ -35,6 +36,18 @@ const App = () => {
   //     const unSub = onAuthStateChanged(auth,  onChange)
   //     return unSub;
   // },[])
+
+  useEffect(() => {
+    axios.get(`https://morning-headland-85395.herokuapp.com/isDoctor?email=${userLoggedIn?.email}`)
+      .then(function (response) {
+        const resLeng = response.data.length;
+        if (resLeng) {
+          setIsDoctor(true)
+        }
+      })
+      .catch(function (error) {
+      })
+  }, [userLoggedIn?.email])
   return (
     <userContext.Provider value={[userLoggedIn, setUserLoggedIn]}>
       <Routes>
@@ -52,9 +65,14 @@ const App = () => {
         }>
           <Route path="appointments" element={<Appointments />} />
           <Route path="appointmentsByDate" element={<DashboardAppointments />} />
-          <Route path="addDoctors" element={<AddDoctors />} />
-          <Route path="prescription" element={<Prescription />} />
-          <Route path="setting" element={<Setting />} />
+          <Route path="addDoctors" element={
+            isDoctor ?
+              <AddDoctors /> : "You Have Not Permission Enter There"} />
+          <Route path="prescription" element={
+            isDoctor ?
+              <Prescription /> : "You Have Not Permission Enter There"} />
+          <Route path="setting" element={
+            isDoctor ? <Setting /> : "You Have Not Permission Enter There"} />
         </Route>
       </Routes>
     </userContext.Provider>

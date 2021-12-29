@@ -13,12 +13,11 @@ const DashboardAppointments = () => {
     setSelectedDate(date.toDateString())
   }
   useEffect(()=>{
-    axios.post('http://localhost:5000/appointmentByDate', {selectedDate , email : userLoggedIn.email})
+    axios.post('https://morning-headland-85395.herokuapp.com/appointmentByDate', {selectedDate , email : userLoggedIn.email})
     .then(function (response) {
       setAppointmentByDate(response.data)
     })
     .catch(function(error) {
-      console.log(error);
     });
   },[selectedDate])
 // console.log(appointmentByDate);

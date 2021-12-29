@@ -23,14 +23,12 @@ const AddDoctors = () => {
     formData.append("phone", doctorInfo.phone)
     formData.append("serviceName", doctorInfo.serviceName)
 
-    axios.post('http://localhost:5000/addDoctor', formData)
+    axios.post('https://morning-headland-85395.herokuapp.com/addDoctor', formData)
     .then(function (response) {
-      console.log(response)
     })
     .catch(function (error) {
-      console.log(error);
     });
-  //   fetch('http://localhost:5000/addDoctor',{
+  //   fetch('https://morning-headland-85395.herokuapp.com/addDoctor',{
   //     method:"POST",
   //     body:formData
   //   })

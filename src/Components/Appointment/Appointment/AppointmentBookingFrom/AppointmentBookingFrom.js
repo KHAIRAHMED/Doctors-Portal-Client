@@ -22,7 +22,7 @@ const AppointmentBookingFrom = ({ modalIsOpen, closeModal, subject , date}) => {
         newData.date = date.toDateString()
         newData.subject = subject
         newData.submitDate = new Date().toDateString()
-        axios.post('http://localhost:5000/addAppointment',newData)
+        axios.post('https://morning-headland-85395.herokuapp.com/addAppointment',newData)
           .then( response => {
                if(response){
                 closeModal()
@@ -30,11 +30,10 @@ const AppointmentBookingFrom = ({ modalIsOpen, closeModal, subject , date}) => {
                }
           })
           .catch(function (error) {
-            console.log(error);
           });
 
 
-        // fetch("http://localhost:5000/addAppointment", {
+        // fetch("https://morning-headland-85395.herokuapp.com/addAppointment", {
         //     method:"POST",
         //     headers:{"content-type" : "application/json"},
         //     body:JSON.stringify(newData)

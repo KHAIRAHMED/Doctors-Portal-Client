@@ -6,12 +6,11 @@ const Appointments = () => {
     const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
     const [appointments , setAppointments] = useState([])
     useEffect(()=>{
-        axios.get(`http://localhost:5000/appointments?email=${userLoggedIn.email}`)
+        axios.get(`https://morning-headland-85395.herokuapp.com/appointments?email=${userLoggedIn.email}`)
         .then(function (response) {
           setAppointments(response.data)
         })
         .catch(function(error) {
-          console.log(error);
         });
       },[userLoggedIn.email])
     return (

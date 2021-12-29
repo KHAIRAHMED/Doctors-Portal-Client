@@ -1,0 +1,8 @@
+.appointmentHeader{
+    /* height:500px; */
+    width:100%;
+    position:relative;
+    background-image: url("../../../../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

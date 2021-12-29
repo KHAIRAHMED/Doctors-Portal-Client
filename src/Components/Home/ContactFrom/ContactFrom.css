@@ -1,0 +1,18 @@
+.contactFrom-section{
+    height:500px;
+    background-image: url("../../../images/bg.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.contactFrom-section::before{
+    height:100%;
+    width:100%;
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color:#3A4256;
+    z-index: -5;
+    /* opacity: 0.9; */
+}

@@ -24,7 +24,7 @@ const servicesInfo =[
 ]
 const Services = () => {
     return (
-        <section className="service-section">
+        <section className="service-section pt-5">
             <div className="text-center"> 
                 <h5 style={{color:"#1CC7C1"}}>Our Services</h5>
                 <h2 style={{color:"#3A4256"}}>Services We Provide</h2>

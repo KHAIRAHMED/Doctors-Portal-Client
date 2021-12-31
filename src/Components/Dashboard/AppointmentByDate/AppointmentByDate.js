@@ -2,8 +2,8 @@ import React from 'react';
 import "./AppointmentByDate.css"
 const AppointmentByDate = ({ appointmentDate }) => {
     return (
-        <div className="me-5 p-3" style={{background: "white"}}>
-            <div className="d-flex justify-content-between" >
+        <div className="" style={{background: "white"}}>
+            <div className="d-flex justify-content-between px-3 " style={{width:"100%"}} >
                 <h3 className="text-secondary" >Appointments</h3>
                 <p className="text-secondary">{new Date().toDateString()}</p>
             </div>

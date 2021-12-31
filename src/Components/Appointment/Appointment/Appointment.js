@@ -1,6 +1,5 @@
 import React, {useState } from 'react';
 import Footer from '../../Shared/Footer/Footer';
-import Navbar from '../../Shared/Navbar/Navbar';
 import AppointmentBooking from './AppointmentBooking/AppointmentBooking';
 import AppointmentHeader from './AppointmentHeader/AppointmentHeader';
 
@@ -11,7 +10,6 @@ const Appointment = () => {
     }
     return (
         <div>
-            <Navbar></Navbar>
             <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
             <AppointmentBooking date={selectedDate}></AppointmentBooking>
             <Footer></Footer>

@@ -1,8 +1,6 @@
 import React from 'react';
-// import InfoCard from '../InfoCard/InfoCard';
 import { faClock , faMarker , faPhone } from '@fortawesome/free-solid-svg-icons'
 import InfoCard from '../InfoCard/InfoCard';
-// import InfoCard from './../InfoCard/InfoCard';
 
 const infoData =[
     {
@@ -26,7 +24,7 @@ const infoData =[
 ]
 const BusinessInfo = () => {
     return (
-     <div className="d-flex justify-content-center">
+     <div className="d-flex justify-content-center py-5">
             <div className="row w-75">
             {
                 infoData.map(info => <InfoCard info={info}></InfoCard>)

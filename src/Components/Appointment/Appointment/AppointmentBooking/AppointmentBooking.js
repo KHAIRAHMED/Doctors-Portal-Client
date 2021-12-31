@@ -40,7 +40,7 @@ const bookingData =[
 ]
 const AppointmentBooking = ({date}) => {
     return (
-        <section className="pt-2">
+        <section className="pt-2" style={{width:"100%"}}>
             <h1 style ={{ color:"#10D0E7"}} className="text-center mb-5">Available Appointments On {date.toDateString()} </h1>
             <div className="row px-5">
                 {

@@ -8,58 +8,66 @@ const Footer = () => {
         <section className="footer-section">
             <div className="d-flex justify-content-center">
                 <div className="row w-75   ">
-                    <div className="col-md-3 text-secondary ">
-                        <h3 style={{ color: "#1CC7C1" }}>Treatement</h3>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
+                    <div className="col-md-4 col-lg-3 col-sm-6 col-12 text-secondary d-flex justify-content-center ">
+                        <div>
+                            <h3 style={{ color: "#1CC7C1" }}>Treatement</h3>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                        </div>
 
                     </div>
-                    <div className="col-md-3 text-secondary">
-                        <h3 style={{ color: "#1CC7C1" }}>Services</h3>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                    </div>
-                    <div className="col-md-3 text-secondary">
-                        <h3 style={{ color: "#1CC7C1" }}>Our Health</h3>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                        <p>Treathment And Pattient</p>
-                        <p>Check Up</p>
-                    </div>
-                    <div className="col-md-3 text-secondary">
-                        <h3 style={{ color: "#1CC7C1" }}>Our Address</h3>
-                        <p>Bangladesh , Chittagong , Feni</p>
-                        <p>Treathment And Pattient</p>
-                        <div style={{display:"flex"}}>
-                        <p className="icon-section">
-                                <Link to="/">
-                                    <FontAwesomeIcon className="fontIcon" icon={faFacebookF}></FontAwesomeIcon>
-                                </Link>
-                            </p>
-                            <p className="icon-section">
-                                <Link to="/">
-                                    <FontAwesomeIcon className="fontIcon" icon={faGooglePlusG}></FontAwesomeIcon>
-                                </Link>
-                            </p>
-                            <p className="icon-section">
-                                <Link to="/">
-                                    <FontAwesomeIcon className="fontIcon" icon={faTwitter}></FontAwesomeIcon>
-                                </Link>
-                            </p>
+                    <div className="col-md-4 col-lg-3 col-sm-6 col-12 text-secondary d-flex justify-content-center">
+                        <div>
+                            <h3 style={{ color: "#1CC7C1" }}>Services</h3>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
                         </div>
-                        <p>Call Now</p>
-                        <button className="btn btn-primary">01833994508</button>
+                    </div>
+                    <div className="col-md-4 col-lg-3 col-sm-6 col-12 text-secondary d-flex justify-content-center">
+                        <div>
+                            <h3 style={{ color: "#1CC7C1" }}>Our Health</h3>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                            <p>Treathment And Pattient</p>
+                            <p>Check Up</p>
+                        </div>
+                    </div>
+                    <div className="col-md-4 col-lg-3 col-sm-6 col-12 text-secondary d-flex justify-content-center">
+                        <div>
+                            <h3 style={{ color: "#1CC7C1" }}>Our Address</h3>
+                            <p>Bangladesh , Chittagong , Feni</p>
+                            <p>Treathment And Pattient</p>
+                            <div style={{ display: "flex" }}>
+                                <p className="icon-section">
+                                    <Link to="/">
+                                        <FontAwesomeIcon className="fontIcon" icon={faFacebookF}></FontAwesomeIcon>
+                                    </Link>
+                                </p>
+                                <p className="icon-section">
+                                    <Link to="/">
+                                        <FontAwesomeIcon className="fontIcon" icon={faGooglePlusG}></FontAwesomeIcon>
+                                    </Link>
+                                </p>
+                                <p className="icon-section">
+                                    <Link to="/">
+                                        <FontAwesomeIcon className="fontIcon" icon={faTwitter}></FontAwesomeIcon>
+                                    </Link>
+                                </p>
+                            </div>
+                            <p>Call Now</p>
+                            <button className="btn btn-primary">01833994508</button>
+                        </div>
                     </div>
                 </div>
             </div>

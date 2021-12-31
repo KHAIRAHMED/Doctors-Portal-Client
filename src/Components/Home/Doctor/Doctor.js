@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Doctor = ({ doctor }) => {
     const { name, image, phone } = doctor 
     return (
-        <div className="col-md-4 text-center">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                 <img src={`data:image/png;base64,${image.img}`} style={{height:"200px" , width:"200px"}} alt='doctor'/>
                 <h2>{name}</h2>
                 <p><FontAwesomeIcon style={{color:"#12D0D7"}} icon={faPhone}></FontAwesomeIcon> {phone}</p>

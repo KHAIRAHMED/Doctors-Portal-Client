@@ -15,6 +15,7 @@ import Prescription from './Components/Dashboard/Prescription/Prescription';
 import Setting from './Components/Dashboard/Setting/Setting';
 import Appointments from './Components/Dashboard/Appointments/Appointments';
 import axios from "axios"
+import Navbar from './Components/Shared/Navbar/Navbar';
 
 export const userContext = createContext()
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
   }, [userLoggedIn?.email])
   return (
     <userContext.Provider value={[userLoggedIn, setUserLoggedIn]}>
+      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={< Home />} />
         <Route path="/appointment" element={

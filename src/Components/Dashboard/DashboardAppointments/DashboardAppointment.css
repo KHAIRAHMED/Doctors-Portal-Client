@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+    .calender-section{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+  }

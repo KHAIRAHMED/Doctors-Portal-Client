@@ -15,7 +15,7 @@ const AppointmentBookingCard = ({ booking  , date }) => {
     }
 
     return (
-        <div className="col-md-4 mb-5">
+        <div className="col-md-4 col-lg-3 col-sm-6 col-12 mb-5">
             <div className="card p-3">
                 <div className="card-body text-center">
                     <h3 className="card-title" style={{color: "#1CC7C1" }}>{subject}</h3>

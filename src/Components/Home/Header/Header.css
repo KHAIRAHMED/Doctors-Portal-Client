@@ -1,11 +1,11 @@
 .header-container {
-    height:700px;
+    /* height:700px; */
     position:relative;
     background-image: url("../../../images/bg.png");
     background-size: cover;
 }
 .header-container::before {
-    height:700px;
+    height:100%;
     content:'';
     position: absolute;
     top: 0;

@@ -22,6 +22,12 @@ const testimonials = [
         address: "Feni",
         img: pepoleThree,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt exercitationem ea, quod deserunt aut magni nihil repellat libero atque sed, neque id quisquam expedita maiores omnis rem maxime perspiciatis."
+    },
+    {
+        name: "Winson Herry",
+        address: "Feni",
+        img: pepoleThree,
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt exercitationem ea, quod deserunt aut magni nihil repellat libero atque sed, neque id quisquam expedita maiores omnis rem maxime perspiciatis."
     }
 ]
 const Testimonials = () => {

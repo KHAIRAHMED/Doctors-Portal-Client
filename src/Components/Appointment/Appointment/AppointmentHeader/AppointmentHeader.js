@@ -6,15 +6,17 @@ import "./AppointmentHeader.css"
 const AppointmentHeader = ({handleDateChange}) => {
 
     return (
-        <main style={{ height: "500px" }} className="row d-flex align-items-center appointmentHeader mb-5">
-            <div className="col-md-4 offset-md-1">
-                <h1 style={{ color: "#3A4256" }}>Appointment </h1>
+        <main style={{ height: "" }} className="row d-flex align-items-center justify-content-center appointmentHeader mb-5">
+            <div className="col-md-6  d-flex align-items-center justify-content-center">
+             <div>
+             <h1 style={{ color: "#3A4256" }}>Appointment </h1>
                 <Calendar
                     onChange={handleDateChange}
                     value={new Date()}
                 />
+             </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-3">
                 <img className="img-fluid" src={chair} alt="img-chair" />
             </div>
         </main>

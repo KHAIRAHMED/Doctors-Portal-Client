@@ -26,6 +26,13 @@ const blogs = [
         date: new Date().toLocaleDateString(),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt exercitationem ea, quod deserunt aut magni nihil repellat libero atque sed, neque id quisquam expedita maiores omnis rem maxime perspiciatis."
     },
+    {
+        name: "Winson Herry",
+        subTitle : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus similique .",
+        img: pepoleTwo,
+        date: new Date().toLocaleDateString(),
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt exercitationem ea, quod deserunt aut magni nihil repellat libero atque sed, neque id quisquam expedita maiores omnis rem maxime perspiciatis."
+    },
 ]
 const Blogs = () => {
     return (

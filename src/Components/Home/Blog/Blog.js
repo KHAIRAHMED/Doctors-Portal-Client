@@ -3,8 +3,8 @@ import "./Blog.css"
 const Blog = ({blog}) => {
     const {name , subTitle , img , date , description} = blog
     return (
-        <div className="col-md-4 col-sm-6 col-12 mt-3">
-        <div class="card  blog-section" style={{width: "16rem"}}>
+        <div className="col-md-4 col-lg-3 col-sm-6 col-12 mt-3">
+        <div class="card  blog-section">
             <div class="card-body">
             <div className="d-flex align-items-center">
                     <div>
